@@ -1,0 +1,99 @@
+{
+    "ComputeServers": {
+        "My_IBM_Account": {
+            "FaaSType": "OpenWhisk",
+            "Region": "us-south",
+            "Endpoint": "128.110.217.33:31001",
+            "Namespace": "faasr"
+        }
+    },
+    "DataStores": {
+        "My_Minio_Bucket": {
+            "Endpoint": "https://play.min.io",
+            "Bucket": "faasr-eval-l",
+            "Region": "",
+            "Writable": "TRUE"
+        }
+    },
+    "FunctionList": {
+        "start": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": [
+                "sum1",
+                "sum2",
+                "sum3",
+                "sum4",
+                "sum5",
+                "sum6",
+                "sum7",
+                "sum8"
+            ]
+        },
+        "sum1": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum2": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum3": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum4": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum5": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum6": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum7": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum8": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "r2": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account"
+        }
+    },
+    "ActionContainers": {
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.0"
+    },
+    "FunctionGitRepo": {
+        "null_function": "spark0510/faasr_eval"
+    },
+    "FunctionInvoke": "r2",
+    "InvocationID": "2256b304-f92c-42a3-827c-bf87e98efc0b",
+    "FaaSrLog": "l_8",
+    "LoggingDataStore": "My_Minio_Bucket",
+    "DefaultDataStore": "My_Minio_Bucket"
+}
+

@@ -1,0 +1,57 @@
+{
+    "ComputeServers": {
+        "My_IBM_Account": {
+            "FaaSType": "OpenWhisk",
+            "Region": "us-south",
+            "Endpoint": "128.110.217.33:31001",
+            "Namespace": "faasr"
+        }
+    },
+    "DataStores": {
+        "My_Minio_Bucket": {
+            "Endpoint": "https://play.min.io",
+            "Bucket": "faasr-eval-l",
+            "Region": "",
+            "Writable": "TRUE"
+        }
+    },
+    "FunctionList": {
+        "start": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": [
+                "sum1",
+                "sum2"
+            ]
+        },
+        "sum1": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "sum2": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account",
+            "InvokeNext": "r2"
+        },
+        "r2": {
+            "FunctionName": "null_function",
+            "FaaSServer": "My_IBM_Account"
+        }
+    },
+    "ActionContainers": {
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.0"
+    },
+    "FunctionGitRepo": {
+        "null_function": "spark0510/faasr_eval"
+    },
+    "FunctionInvoke": "r2",
+    "InvocationID": "43f0f890-5e89-4a5a-a18c-b4fc66b621fa",
+    "FaaSrLog": "l_2",
+    "LoggingDataStore": "My_Minio_Bucket",
+    "DefaultDataStore": "My_Minio_Bucket"
+}
+
