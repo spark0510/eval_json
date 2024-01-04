@@ -4,7 +4,8 @@
             "FaaSType": "OpenWhisk",
             "Region": "us-south",
             "Endpoint": "128.110.217.33:31001",
-            "Namespace": "faasr"
+            "Namespace": "faasr",
+            "API.key": "bd60207a-91d6-463f-b243-c87d0fe202b7:yAHq0YcY6Ku1icKpiOJ6WRJu1mdL4t1jDIhiHVSgBVTZGCJr7dvGBFWynxpTnEBi"
         }
     },
     "DataStores": {
@@ -12,7 +13,9 @@
             "Endpoint": "https://play.min.io",
             "Bucket": "faasr-eval-l",
             "Region": "",
-            "Writable": "TRUE"
+            "Writab{le": "TRUE",
+            "AccessKey": "Q3AM3UQ867SPQQA43P2F",
+            "SecretKey": "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG"
         }
     },
     "FunctionList": {
