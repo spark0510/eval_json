@@ -76,16 +76,16 @@
         }
     },
     "ActionContainers": {
-        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.0",
-        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.0"
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.5"
     },
     "FunctionGitRepo": {
         "null_function": "spark0510/faasr_eval"
