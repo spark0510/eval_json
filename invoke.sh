@@ -5,7 +5,8 @@ rep=$2
 for d in */ ; do
         cd "$d"
         for ((i=0; i<rep; i++)); do
-                wsk -i action invoke r2 --param-file "$name"
+                wsk -i action invoke r2 --param-file "$1.json"
         done
+	sleep 660
         cd ../
 done

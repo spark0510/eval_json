@@ -370,10 +370,6 @@
         "sum48": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
         "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.6"
     },
-    "FunctionGitRepo": {
-        "null_function": "spark0510/faasr_eval",
-        "sleep_1min_function": "spark0510/faasr_eval"
-    },
     "FunctionInvoke": "r2",
     "InvocationID": "561fb80e-55c8-436c-8faa-52dce47721b7",
     "FaaSrLog": "l_48",
