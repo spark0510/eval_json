@@ -38,18 +38,19 @@
             "InvokeNext": "r2"
         },
         "r2": {
-            "FunctionName": "null_function",
+            "FunctionName": "sleep_1min_function",
             "FaaSServer": "My_IBM_Account"
         }
     },
     "ActionContainers": {
-        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.5"
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.6"
     },
     "FunctionGitRepo": {
-        "null_function": "spark0510/faasr_eval"
+        "null_function": "spark0510/faasr_eval",
+        "sleep_1min_function": "spark0510/faasr_eval"
     },
     "FunctionInvoke": "r2",
     "InvocationID": "43f0f890-5e89-4a5a-a18c-b4fc66b621fa",

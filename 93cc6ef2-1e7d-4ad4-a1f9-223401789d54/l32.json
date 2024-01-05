@@ -138,7 +138,7 @@
             "InvokeNext": "r2"
         },
         "r2": {
-            "FunctionName": "null_function",
+            "FunctionName": "sleep_1min_function",
             "FaaSServer": "My_IBM_Account"
         },
         "sum17": {
@@ -223,48 +223,59 @@
         }
     },
     "ActionContainers": {
-        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum9": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum10": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum11": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum12": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum13": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum14": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum15": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum16": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum17": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum18": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum19": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum20": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum21": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum22": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum23": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum24": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum25": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum26": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum27": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum28": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum29": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum30": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum31": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum32": "spark77/openwhisk-tidyverse:eval-1.0.0.5"
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum9": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum10": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum11": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum12": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum13": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum14": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum15": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum16": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum17": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum18": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum19": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum20": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum21": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum22": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum23": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum24": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum25": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum26": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum27": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum28": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum29": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum30": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum31": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum32": "spark77/openwhisk-tidyverse:eval-1.0.0.6"
     },
     "FunctionGitRepo": {
-        "null_function": "spark0510/faasr_eval"
+        "null_function": "spark0510/faasr_eval",
+        "sleep_1min_function": "spark0510/faasr_eval"
     },
     "FunctionInvoke": "r2",
     "InvocationID": "93cc6ef2-1e7d-4ad4-a1f9-223401789d54",
     "FaaSrLog": "l_32",
     "LoggingDataStore": "My_Minio_Bucket",
-    "DefaultDataStore": "My_Minio_Bucket"
+    "DefaultDataStore": "My_Minio_Bucket",
+    "FunctionCRANPackage": {
+        "null_function": [
+
+        ]
+    },
+    "FunctionGitHubPackage": {
+        "null_function": [
+
+        ]
+    }
 }
 

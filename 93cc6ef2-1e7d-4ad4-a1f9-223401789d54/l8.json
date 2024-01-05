@@ -74,24 +74,25 @@
             "InvokeNext": "r2"
         },
         "r2": {
-            "FunctionName": "null_function",
+            "FunctionName": "sleep_1min_function",
             "FaaSServer": "My_IBM_Account"
         }
     },
     "ActionContainers": {
-        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.5",
-        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.5"
+        "start": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum1": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum2": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum3": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum4": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum5": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum6": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum7": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "sum8": "spark77/openwhisk-tidyverse:eval-1.0.0.6",
+        "r2": "spark77/openwhisk-tidyverse:eval-1.0.0.6"
     },
     "FunctionGitRepo": {
-        "null_function": "spark0510/faasr_eval"
+        "null_function": "spark0510/faasr_eval",
+        "sleep_1min_function": "spark0510/faasr_eval"
     },
     "FunctionInvoke": "r2",
     "InvocationID": "93cc6ef2-1e7d-4ad4-a1f9-223401789d54",
