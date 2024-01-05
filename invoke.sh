@@ -7,6 +7,6 @@ for d in */ ; do
         for ((i=0; i<rep; i++)); do
                 wsk -i action invoke r2 --param-file "$1.json"
         done
-	sleep 660
+	sleep $3
         cd ../
 done
